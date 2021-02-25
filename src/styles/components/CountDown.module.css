@@ -58,6 +58,33 @@
   transition: background-color 0.2s;
 }
 
-.cowntDownButton:hover {
+.cowntDownButton:not(:disabled):hover {
   background: var(--blue-dark);
+}
+
+.cowntDownButtonActive {
+  background: var(--white);
+  color: var(--text);
+}
+
+.cowntDownButtonActive:not(:disabled):hover {
+  background: var(--red);
+  color: var(--white);
+}
+
+.cowntDownButton:disabled {
+  background: var(--white);
+  color: var(--text);
+
+  cursor: not-allowed;
+}
+
+.cowntDownButton:disabled > div {
+  flex: 1;
+  position: relative;
+
+  top: 25px;
+  height: 4px;
+  border-radius: 4px;
+  background: var(--green);
 }
