@@ -46,7 +46,7 @@ export function ChallangesProvider({
   );
   const [completed, setCompleted] = useState(false);
 
-  const [isLevelUpSetModalOpen, setIsLevelUpSetModalUp] = useState(false);
+  const [isLevelUpSetModalOpen, setIsLevelUpSetModalUp] = useState(true);
 
   const [activeChallenge, setActiveChallenge] = useState(null);
 
